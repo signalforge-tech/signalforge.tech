@@ -1,19 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signal//Forge — Coming 2026</title>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- Sora font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: "Sora", sans-serif;
+            background: linear-gradient(160deg, #051423 0%, #0A1F33 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 2.8rem;
+            letter-spacing: 0.08em;
+        }
+
+        .slash {
+            color: #19C6FF;
+        }
+
+        .tagline {
+            margin-top: 12px;
+            font-size: 0.85rem;
+            font-weight: 400;
+            letter-spacing: 0.16em;
+            opacity: 0.9;
+        }
+
+        /* I/O signature */
+        .signature {
+            margin-top: 40px;
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+        }
+
+        .signature .i {
+            color: #FFFFFF;
+        }
+        .signature .slash {
+            color: #19C6FF;
+        }
+        .signature .o {
+            color: #FFFFFF;
+        }
+
+        .coming {
+            margin-top: 30px;
+            font-size: 1rem;
+            letter-spacing: 0.20em;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 600px) {
+            .logo { font-size: 2rem; }
+            .signature { font-size: 1.6rem; }
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
-        <div class="logo">//</div>
-        <h1 class="brand">Signal<span>//</span>Forge</h1>
-        <p class="tagline">A clean space for engineering, AI, and creation.</p>
-        <div class="divider"></div>
-        <p class="coming">Coming 2026</p>
+        <div class="logo">
+            SIGNAL <span class="slash">//</span> FORGE
+        </div>
+
+        <div class="tagline">
+            A CLEAN SPACE FOR ENGINEERING, AI, AND CREATION
+        </div>
+
+        <div class="signature">
+            <span class="i">I</span><span class="slash">/</span><span class="o">O</span>
+        </div>
+
+        <div class="coming">
+            COMING 2026
+        </div>
     </div>
 </body>
 </html>
