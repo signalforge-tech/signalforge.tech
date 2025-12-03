@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #0d0f12;
+    color: #f4f4f4;
+    font-family: 'Sora', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+}
+
+.brand {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 0.3rem;
+}
+
+.brand span {
+    color: #19C6FF; /* Official Signal//Forge accent */
+}
+
+.tagline {
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.85;
+    margin-bottom: 2rem;
+}
+
+.divider {
+    width: 80px;
+    height: 2px;
+    background: #19C6FF;
+    margin: 0 auto 1.8rem auto;
+}
+
+.coming {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    opacity: 0.75;
+}
+
+.logo {
+    font-size: 4rem;
+    line-height: 0.9;
+    font-weight: 300;
+    color: #19C6FF;
+    opacity: 0.9;
+    margin-bottom: 0.2rem;
+}
