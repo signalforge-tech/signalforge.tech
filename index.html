@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signal//Forge — Coming 2026</title>
-    
+
     <!-- Sora font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
 
     <style>
+        /* ----------------------------- */
+        /* Global                        */
+        /* ----------------------------- */
         body {
             margin: 0;
             height: 100vh;
-            font-family: "Sora", sans-serif;
+            font-family: "Sora", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
             background: linear-gradient(160deg, #051423 0%, #0A1F33 100%);
             display: flex;
             justify-content: center;
@@ -27,13 +30,16 @@
             padding: 40px;
         }
 
+        /* ----------------------------- */
+        /* Logo                          */
+        /* ----------------------------- */
         .logo {
             font-weight: 700;
             font-size: 2.8rem;
             letter-spacing: 0.08em;
         }
 
-        .slash {
+        .logo .slash {
             color: #19C6FF;
         }
 
@@ -45,7 +51,17 @@
             opacity: 0.9;
         }
 
-        /* I/O signature */
+        /* ----------------------------- */
+        /* KARAIS-style I/O pulse        */
+        /* ----------------------------- */
+
+        /* exact pulse from KARAIS .io-slash */
+        @keyframes slashPulse {
+            0%   { opacity: 0.6; transform: translateY(0px); }
+            50%  { opacity: 1.0; transform: translateY(-1px) scale(1.02); }
+            100% { opacity: 0.6; transform: translateY(0px); }
+        }
+
         .signature {
             margin-top: 40px;
             font-size: 2.2rem;
@@ -53,14 +69,16 @@
             letter-spacing: 0.08em;
         }
 
-        .signature .i {
-            color: #FFFFFF;
-        }
-        .signature .slash {
-            color: #19C6FF;
-        }
+        .signature .i,
         .signature .o {
             color: #FFFFFF;
+        }
+
+        .signature .slash {
+            color: #19C6FF;
+            display: inline-block;
+            animation: slashPulse 1.8s ease-in-out infinite;
+            will-change: opacity, transform;
         }
 
         .coming {
@@ -70,30 +88,4 @@
             opacity: 0.9;
         }
 
-        @media (max-width: 600px) {
-            .logo { font-size: 2rem; }
-            .signature { font-size: 1.6rem; }
-        }
-    </style>
-</head>
-
-<body>
-    <div class="container">
-        <div class="logo">
-            SIGNAL <span class="slash">//</span> FORGE
-        </div>
-
-        <div class="tagline">
-            A CLEAN SPACE FOR ENGINEERING, AI, AND CREATION
-        </div>
-
-        <div class="signature">
-            <span class="i">I</span><span class="slash">/</span><span class="o">O</span>
-        </div>
-
-        <div class="coming">
-            COMING 2026
-        </div>
-    </div>
-</body>
-</html>
+        @media (max-widt
