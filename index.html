@@ -55,7 +55,6 @@
         /* KARAIS-style I/O pulse        */
         /* ----------------------------- */
 
-        /* exact pulse from KARAIS .io-slash */
         @keyframes slashPulse {
             0%   { opacity: 0.6; transform: translateY(0px); }
             50%  { opacity: 1.0; transform: translateY(-1px) scale(1.02); }
@@ -88,4 +87,31 @@
             opacity: 0.9;
         }
 
-        @media (max-widt
+        @media (max-width: 600px) {
+            .logo { font-size: 2rem; }
+            .signature { font-size: 1.6rem; }
+            .container { padding: 24px; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            SIGNAL <span class="slash">//</span> FORGE
+        </div>
+
+        <div class="tagline">
+            A CLEAN SPACE FOR ENGINEERING, AI, AND CREATION
+        </div>
+
+        <div class="signature">
+            <span class="i">I</span><span class="slash">/</span><span class="o">O</span>
+        </div>
+
+        <div class="coming">
+            COMING 2026
+        </div>
+    </div>
+</body>
+</html>
